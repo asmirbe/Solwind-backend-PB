@@ -30,7 +30,7 @@ COPY --from=builder /app/pocketbase ./pocketbase
 
 # Set environment variables
 ENV POCKETBASE_API_KEY=your_api_key
-
+ENV PORT=8080
 # Expose port 8080
 EXPOSE 8080
 
