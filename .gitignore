@@ -1,2 +1,4 @@
 pb_data
 .env
+go.mod
+go.sum
