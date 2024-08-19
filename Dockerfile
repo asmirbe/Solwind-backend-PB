@@ -25,8 +25,6 @@ RUN apk add --no-cache ca-certificates
 # Set the working directory
 WORKDIR /pb
 
-# Set environment variables
-ENV POCKETBASE_API_KEY=your_api_key
 ENV PORT=8080
 
 # Expose port 8080
