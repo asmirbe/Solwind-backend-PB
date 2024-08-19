@@ -25,14 +25,15 @@ RUN apk add --no-cache ca-certificates
 # Set the working directory
 WORKDIR /pb
 
-# Copy the PocketBase binary from builder
-COPY --from=builder /app/pocketbase ./pocketbase
-
 # Set environment variables
 ENV POCKETBASE_API_KEY=your_api_key
 ENV PORT=8080
+
 # Expose port 8080
 EXPOSE 8080
 
+# Copy the binary from the builder stage
+COPY --from=builder /app/pocketbase /usr/local/bin/pocketbase
+
 # Command to run PocketBase
-CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080"]
+CMD ["/usr/local/bin/pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=/pb_data", "--publicDir=/pb_public"]
