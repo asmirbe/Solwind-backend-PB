@@ -34,4 +34,4 @@ EXPOSE 8080
 COPY --from=builder /app/pocketbase /usr/local/bin/pocketbase
 
 # Command to run PocketBase
-CMD ["/usr/local/bin/pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=/pb_data", "--publicDir=/pb_public"]
+CMD ["/usr/local/bin/pocketbase", "serve", "--http=0.0.0.0:8080"]
