@@ -1,8 +1,7 @@
-# Pocketbase on Railway
+# Solwind VSCode extension Backend - Pocketbase
 
-Open Source backend for your next SaaS and Mobile app in 1 file.
-
+Deploy this on Railway with easy with
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/XfUmjI?referralCode=faraz)
 
-
-export POCKETBASE_API_KEY=your_secret_key_here
+Add a secret API Key in your env and your done !
+`export POCKETBASE_API_KEY=your_secret_key_here`
