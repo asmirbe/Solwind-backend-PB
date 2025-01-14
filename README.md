@@ -1,6 +1,6 @@
 # Solwind VSCode extension Backend - Pocketbase
 
-Deploy this on Railway with easy with
+Deploy it on Railway
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/XfUmjI?referralCode=faraz)
 
